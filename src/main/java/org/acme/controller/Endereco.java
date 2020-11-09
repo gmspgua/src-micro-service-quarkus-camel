@@ -1,4 +1,4 @@
-package org.acme;
+package org.acme.controller;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -13,7 +13,7 @@ import org.acme.model.Cidade;
 import org.apache.camel.ProducerTemplate;
 
 @Path("/endereco")
-public class ExampleResource {
+public class Endereco {
 	
 	@Inject
     ProducerTemplate producer;
@@ -21,7 +21,7 @@ public class ExampleResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON) 
-    public ResponseBuilder hello(Cidade cidade) {
+    public ResponseBuilder buscarEndereco(Cidade cidade) {
     	
     	producer.requestBody("direct:start",cidade.getCep());
     	return Response.ok();

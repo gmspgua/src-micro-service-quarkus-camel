@@ -1,6 +1,29 @@
 package org.acme.model;
 
 public class Endereco {
+	
+	
+	 public Endereco() {
+		super();
+	}
+	 
+	public Endereco(String cep, String logradouro, String complemento, String bairro, String localidade, String uf,
+			String ibge, String gia, String ddd, String siafi) {
+		super();
+		this.cep = cep;
+		this.logradouro = logradouro;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.localidade = localidade;
+		this.uf = uf;
+		this.ibge = ibge;
+		this.gia = gia;
+		this.ddd = ddd;
+		this.siafi = siafi;
+	}
+
+
+
 	 private String cep;
 	 private String logradouro;
 	 private String complemento;
@@ -13,7 +36,6 @@ public class Endereco {
 	 private String siafi;
 
 
-	 // Getter Methods 
 
 	 public String getCep() {
 	  return cep;
@@ -55,7 +77,6 @@ public class Endereco {
 	  return siafi;
 	 }
 
-	 // Setter Methods 
 
 	 public void setCep(String cep) {
 	  this.cep = cep;
