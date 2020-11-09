@@ -4,7 +4,7 @@ This project is a demonstration of powerfull Quarkus ans the usability Apache Ca
 
 The use case consist:
 
-```Send a nember of CEP, apache camel route going to get more information from WS Correios, and if the state were Sao Paulo will insert into database than insert into a queue of Active MQ.```
+```Send a number of CEP, apache camel route going to get more information from WS Correios, and if the state were Sao Paulo will insert into database than insert into a queue of Active MQ.```
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
