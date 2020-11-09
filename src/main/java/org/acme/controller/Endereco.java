@@ -15,7 +15,7 @@ import org.apache.camel.ProducerTemplate;
 @Path("/endereco")
 public class Endereco {
 	
-	@Inject
+    @Inject
     ProducerTemplate producer;
 
     @POST
