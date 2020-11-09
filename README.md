@@ -61,6 +61,9 @@ Guide: https://quarkus.io/guides/rest-json
 
 
 # For more information:
-
+```shell script
 https://quarkus.io/
+```
+```shell script
 https://camel.apache.org/
+```
