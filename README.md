@@ -1,4 +1,10 @@
-# code-with-quarkus project
+# quarkus-camel project
+
+This project is a demonstration of powerfull Quarkus ans the usability Apache Camel.
+
+The use case consist:
+
+```Send a nember of CEP, apache camel route going to get more information from WS Correios, and if the state were Sao Paulo will insert into database than insert into a queue of Active MQ.```
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -41,6 +47,12 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
 
+## Creating a native executable inside container Docker
+
+docker build -f src/main/docker/Dockerfile.multistage -t [Repositorys_Name]/[Containers Name]
+
+docker run -i --rm -p 8080:8080 [Repositorys_Name]/[Containers Name]
+
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
 # RESTEasy JAX-RS
@@ -48,4 +60,7 @@ If you want to learn more about building native executables, please consult http
 Guide: https://quarkus.io/guides/rest-json
 
 
-# quarkus-apache-camel-estudo
+# For more information:
+
+https://quarkus.io/
+https://camel.apache.org/
